@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CoffeeTech Slider</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle/3.0.3/jquery.cycle.all.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>CoffeeTech</h1>
+    <div class="slider">
+      <img src="img/slide1.jpg" width="640" height="426" alt="">
+      <img src="img/slide2.jpg" width="640" height="426" alt="">
+      <img src="img/slide3.jpg" width="640" height="426" alt="">
+      <img src="img/slide4.jpg" width="640" height="426" alt="">
+      <img src="img/slide5.jpg" width="640" height="426" alt="">
+    </div>
+
+    <ul id="nav">
+      <li id="prev"><a href="#">Previous</a></li>
+      <li id="next"><a href="#">Next</a></li>
+    </ul>
+  </div>
+<script>
+  $(document).ready(function(){
+    $('.slider').cycle({
+      fx: 'fade',
+      pause: 1,
+      prev: '#prev',
+      next: '#next'
+    });
+  });
+</script>
+
+</body>
+</html>
