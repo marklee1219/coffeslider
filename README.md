@@ -1,0 +1,2 @@
+# coffeslider
+Jquery Simple Slider
